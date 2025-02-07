@@ -1,0 +1,32 @@
+body{
+    display:grid;
+    grid-template-columns: 15% 1fr 1fr  ;
+    grid-template-rows: 15% 80% 20%  ;
+    grid-template-areas: 
+    " nav nav nav "
+    "aside main-section main-section"
+    "footer footer footer";
+    height: 100vh; 
+}
+#nav{
+    border: solid 1px black;
+    grid-area: nav;
+    height: 100%;
+}
+#aside{
+    border: solid 1px black;
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+}
+#main-section{
+border: solid 1px black;
+grid-area:main-section;
+height: 100%;
+
+}
+#footer{
+border: solid 1px black;
+grid-area: footer;
+height: 100%;
+}
