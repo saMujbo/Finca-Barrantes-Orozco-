@@ -1,18 +1,49 @@
-body{
+ body{
     display:grid;
-    grid-template-columns: 15% 1fr 1fr  ;
-    grid-template-rows: 15% 80% 20%  ;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 20% 150vh 15%  ;
     grid-template-areas: 
-    " nav nav nav "
-    "aside main-section main-section"
-    "footer footer footer";
+    " nav"
+    " main-section"
+    "footer";
     height: 100vh; 
+    margin: 0;
+    padding: 0;
 }
 #nav{
+    display: grid;
     border: solid 1px black;
     grid-area: nav;
     height: 100%;
+    grid-template-areas: 
+    "contactos logo Ventas";    
+    align-content: space-around;
+    justify-content: space-around;
+   
 }
+#Ventas{
+    grid-area:Ventas;
+    border: solid 1px black;
+    height: 100px;
+    width: 100px;
+}
+#logo{
+    grid-area:logo;
+    border: solid 1px black;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+}
+.imagen{
+    border-radius: 10px;
+}
+#contactos{
+    grid-area: contactos;
+    border: solid 1px black;
+    height: 100px;
+    width: 100px;
+}
+
 #aside{
     border: solid 1px black;
     grid-area: aside;
@@ -20,13 +51,53 @@ body{
     width: 100%;
 }
 #main-section{
+ display: grid;
+ grid-template-areas: 
+ "div1 ."
+ ".  div2"
+ "div3 ."
+ ". div4"
+ "div5 ."
+ ;
 border: solid 1px black;
 grid-area:main-section;
 height: 100%;
+align-content: space-around;
+justify-content: space-around;
 
+}
+.div1{
+    border: solid 1px black;
+    height: 200px;
+    width: 300px;
+    grid-area: div1;
+}
+.div2{
+    border: solid 1px black;
+    height: 200px;
+    width: 300px;
+    grid-area: div2;
+}
+.div3{
+    border: solid 1px black;
+    height: 200px;
+    width: 300px;
+    grid-area: div3;
+}
+.div4{
+    border: solid 1px black;
+    height: 200px;
+    width: 300px;
+    grid-area: div4;
+}
+.div5{
+    border: solid 1px black;
+    height: 200px;
+    width: 300px;
+    grid-area: div5;
 }
 #footer{
 border: solid 1px black;
 grid-area: footer;
 height: 100%;
-}
+}  
