@@ -1,15 +1,17 @@
  body{
     display:grid;
     grid-template-columns: 1fr  ;
-    grid-template-rows: 20% 150vh 15%  ;
+    grid-template-rows: 45% 150vh 50vh 15%  ;
     grid-template-areas: 
     " nav"
     " main-section"
+    "services-section"
     "footer";
     height: 100vh; 
     margin: 0;
     padding: 0;
-}
+    margin-top: 10px; 
+    background-color: antiquewhite;
 #nav{
     display: grid;
     border: solid 1px black;
@@ -19,27 +21,39 @@
     "contactos logo Ventas";    
     align-content: space-around;
     justify-content: space-around;
+    background-color: #005954; 
+}
    
 }
 #Ventas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area:Ventas;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     height: 100px;
     width: 100px;
 }
 #logo{
     grid-area:logo;
-    border: solid 1px black;
-    height: 100px;
-    width: 200px;
+    /* border: solid 1px black; */
+    height: 200px;
+    width: 300px;
     border-radius: 10px;
+    background-image: url(https://files.oaiusercontent.com/file-TyjsdiBjPkjd3ZRgHiT54H?se=2025-02-08T01%3A08%3A32Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dc340b3cf-e3cb-46e8-a0d6-92db2905ed8a.webp&sig=GJtsj%2B3keJMeeR/L9iM%2B/lhnULSK8k8O5%2BGR7Cg4tq0%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .imagen{
     border-radius: 10px;
 }
 #contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: contactos;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     height: 100px;
     width: 100px;
 }
@@ -66,38 +80,72 @@ align-content: space-around;
 justify-content: space-around;
 
 }
-.div1{
+
+/* .div1{
     border: solid 1px black;
     height: 200px;
     width: 300px;
     grid-area: div1;
+    background-image: url(https://img3.21food.com/img/product/2022/11/26/promelagro-19210360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .div2{
     border: solid 1px black;
     height: 200px;
     width: 300px;
     grid-area: div2;
+    background-image: url(https://img3.21food.com/img/product/2022/11/26/promelagro-19210360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .div3{
     border: solid 1px black;
     height: 200px;
     width: 300px;
     grid-area: div3;
+    background-image: url(https://img3.21food.com/img/product/2022/11/26/promelagro-19210360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .div4{
     border: solid 1px black;
     height: 200px;
     width: 300px;
     grid-area: div4;
+    background-image: url(https://img3.21food.com/img/product/2022/11/26/promelagro-19210360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .div5{
     border: solid 1px black;
     height: 200px;
     width: 300px;
     grid-area: div5;
+    background-image: url(https://img3.21food.com/img/product/2022/11/26/promelagro-19210360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+#services-section{
+    grid-area: services-section;
+    height: 100%;
+    border: solid 1px black;
 }
 #footer{
 border: solid 1px black;
 grid-area: footer;
 height: 100%;
-}  
+background-color: #005954;
+}
+#nuemero{
+color: antiquewhite;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
